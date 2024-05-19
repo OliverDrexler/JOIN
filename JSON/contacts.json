@@ -1,0 +1,79 @@
+[
+    {
+        "name": "Alex Maier",
+        "mail": "alex.maier@strive.com",
+        "phone": "+43789878787",
+        "color": "teal",
+        "id": ""
+    },
+    {
+        "name": "Anna Müller",
+        "mail": "anna.mueller@strive.com",
+        "phone": "+43789878566",
+        "color": "lightseagreen",
+        "id": ""
+    },
+    {
+        "name": "Bernd Hofmann",
+        "mail": "hofmann@ib-bank.com",
+        "phone": "+49647289145",
+        "color": "slategrey",
+        "id": ""
+    },
+    {
+        "name": "Eva Grace",
+        "mail": "eg@marinaclub.com",
+        "phone": "+25493448951",
+        "color": "indigo",
+        "id": ""
+    },
+    {
+        "name": "Frank Groß",
+        "mail": "groß@frank.de",
+        "phone": "+49668463546",
+        "color": "fuchsia",
+        "id": ""
+    },
+    {
+        "name": "James Walker",
+        "mail": "jw@dreamlogistics.com",
+        "phone": "+4964865155",
+        "color": "seagreen",
+        "id": ""
+    },
+    {
+        "name": "Leonie Maier",
+        "mail": "leonie.maier@abc-construct.com",
+        "phone": "+4959648712",
+        "color": "pink",
+        "id": ""
+    },
+    {
+        "name": "Max Baumgart",
+        "mail": "max@baumgart.de",
+        "phone": "+4912123456",
+        "color": "skyblue",
+        "id": ""
+    },
+    {
+        "name": "Olivia Shaun",
+        "mail": "os@health-co.com",
+        "phone": "+251648689446",
+        "color": "crimson",
+        "id": ""
+    },
+    {
+        "name": "Paul Lee",
+        "mail": "lee@lee-enterprises.com",
+        "phone": "+97947621654",
+        "color": "green",
+        "id": ""
+    },
+    {
+        "name": "Volker Richter",
+        "mail": "richter@cv-systems.com",
+        "phone": "+63349555479",
+        "color": "cadetblue",
+        "id": ""
+    }
+]

@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open_Sans_regular';
+    src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open_Sans_italic';
+    src: url('../assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: "Inter";
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+    line-height: 73.2px;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 47px;
+}
+
+h4 {
+    font-size: 38px;
+    font-weight: normal;
+}
+
+h5 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 32.4px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 19.2 px;
+    font-weight: 400;
+}
+
+h7 {
+    font-size: 20px;
+    line-height: 24 px;
+    font-weight: 700;
+}
+
+.text-underline {
+    width: 30%;
+    border-top: 3px solid #29ABE2;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.legal-links a:visited {
+    color: #000000;
+    font-weight: normal;
+}
+
+.legal-links a:hover {
+    color: #29ABE2;
+    font-weight: bold;
+}
+
+#userNameDiv {
+    font-size: 52px;
+    color: rgba(41, 171, 226, 1);
+    font-weight: bold;
+}
+
+.link-style {
+    color: rgba(41, 171, 226, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    text-decoration: none;
+}
+
+.link-style:visited {
+    text-decoration: none;
+}
+
+.link-style:hover {
+    text-decoration: underline;
+}

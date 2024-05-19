@@ -1,0 +1,419 @@
+.input-style {
+  width: 100%;
+  height: auto;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border: unset;
+  border-radius: 10px;
+  border: 1px solid rgba(209, 209, 209, 1);
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 50%;
+  background-size: 24px;
+  font-size: 16px;
+}
+
+.input-name {
+  background-image: url("../assets/img/person.svg");
+}
+
+.input-email {
+  background-image: url("../assets/img/mail.svg");
+}
+
+.input-password {
+  background-image: url("../assets/img/lock.svg");
+}
+
+.input-phone {
+  background-image: url("../assets/img/phone.svg");
+}
+
+.input-style::placeholder {
+  color: rgba(209, 209, 209, 1);
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.placeholder-black::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.input-font {
+  font-size: 20px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.input-style-description::placeholder,
+.input-login::placeholder {
+  color: lightgray;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#loginCheckbox,
+#signUpCheckbox {
+  width: 24px;
+  height: 24px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border: unset;
+  padding: 15px 24px;
+  background-color: #2a3647;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 25.2px;
+  text-wrap: nowrap;
+}
+
+.btn-message {
+  border-radius: 8px;
+  padding: 25px 24px;
+  background-color: #2a3647;
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 25.2px;
+  border: unset;
+  text-wrap: nowrap;
+}
+
+.btn:hover {
+  background-color: #29abe2;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btn-alt {
+  background-color: white;
+  border: 1px solid #2a3647;
+  color: #2a3647;
+}
+
+.btn-alt:hover {
+  background-color: white;
+  border: 1px solid #29abe2;
+  color: #29abe2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.clear-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 15px 24px;
+  font-size: 21px;
+  border: solid;
+  border-width: 1px;
+  border-color: #2a3647;
+  text-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(42, 54, 71, 1);
+}
+
+.clear-btn:hover {
+  border-color: #29abe2;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+  color: #29abe2;
+}
+
+.clear-btn:hover svg.contact-header-svg {
+  fill: #29abe2;
+}
+
+.animation-container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logo-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  animation: moveAndShrinkLogo 2s 1 forwards;
+  animation-delay: 0.5s; 
+}
+
+@keyframes moveAndShrinkLogo {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); 
+  }
+  100% {
+    top: -169px;
+    left: -70px;
+    transform: scale(0.25); 
+  }
+}
+
+.index-logo {
+  width: 400px;
+  height: 500px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.y-line-blue {
+  border-left: 3px solid #29abe2;
+  height: 73px;
+}
+
+.y-line-grey {
+  border-left: 3px solid rgba(209, 209, 209, 1);
+  height: 100px;
+}
+
+.back-arrow {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.div-underline {
+  width: 100%;
+}
+
+.div-parting {
+  height: 100%;
+}
+
+.div-partingline {
+  height: 490px;
+  width: 1px;
+  background-color: rgba(209, 209, 209, 1);
+}
+
+.add-task-partingline {
+  height: 450px;
+  width: 1px;
+  background-color: rgba(209, 209, 209, 1);
+}
+
+.header-icons-wrapper:hover .task-popup-svg,
+.header-icons-wrapper:hover .task-popup-span {
+  fill: rgba(41, 171, 226, 1);
+  color: rgba(41, 171, 226, 1);
+  cursor: pointer;
+}
+
+ol li::marker {
+  font-size: 27px;
+  line-height: 32.4px;
+  font-weight: 700;
+}
+
+li {
+  margin: 20px 0;
+}
+
+.outside {
+  right: 0;
+}
+
+.popup-bg-filter {
+  background-color: rgba(255, 255, 255, 1);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.close-button-div:hover {
+  background-color: rgb(240, 240, 240);
+  border-radius: 50%;
+}
+
+.popup-close-button img {
+  cursor: pointer;
+}
+
+.edit-style:hover,
+.delete-style:hover {
+  color: #29abe2;
+  cursor: pointer;
+}
+
+#headerSymbolPopup {
+  display: none;
+  margin-right: 20px;
+  background-color: rgba(42, 54, 71, 1);
+  border-radius: 20px 0px 20px 20px;
+  position: absolute;
+  right: 0;
+  top: 96px;
+  width: 150px;
+  height: 158px;
+  padding: 10px;
+  z-index: 99999999;
+}
+
+.symbolPopupLink {
+  padding: 4px 28px !important;
+  white-space: nowrap;
+  color: rgba(205, 205, 205, 1) !important;
+}
+
+#loginMessageContainer {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  bottom: 20%;
+  height: 300px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#messageFormLogin {
+  display: none;
+  min-width: 50%;
+  height: auto;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 9999;
+}
+
+@keyframes slideTop {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutDown {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.animation-up {
+  animation: slideTop 0.3s ease-in-out forwards;
+}
+
+.animation-down {
+  animation: slideOutDown 0.3s ease-in-out forwards;
+}
+
+.centered-up {
+  bottom: 70%;
+}
+
+.outside-down {
+  bottom: 0;
+}
+
+#signUpMessageContainer {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 50%;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#messageFormSignUp {
+  display: none;
+  min-width: 50%;
+  height: 100px;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 9999;
+}
+
+.popup-guest-message {
+  background-color: #2a3647;
+  width: 20%;
+  height: auto;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 9999;
+  color: white;
+}
+
+#guestMessagePopupContacts {
+  display: none;
+}
+
+#guestMessagePopupAddTask {
+  display: none;
+}
+
+#messagePopupLogoutDiv {
+  display: none;
+}
+
+#boardTaskEditContainer {
+  display: none;
+}
+
+#bottomAddTaskEditOptions {
+  display: none;
+}
+
+.guestPopupLinkStyle {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-circle-small {
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 1);
+  height: 35px;
+  width: 35px;
+}
+
+.contact-circle-small-letters {
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 14.4px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.class1 {
+  height: 200px;
+}
+
+.icon-separator {
+  height: 24px;
+  width: 1px;
+  background-color: #d1d1d1;
+}
+
+#btnDivOk-3 {
+  display:none;
+}
+
+#btnDivOk-4 {
+  display:none;
+}

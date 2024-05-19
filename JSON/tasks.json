@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "label": "User Story",
+        "title": "Contact Form & Imprint",
+        "description": "Create a contact form and imprint page.",
+        "dueDate": "30/05/2024",
+        "priority": "Urgent",
+        "assignedTo": ["Anna Müller", "Eva Grace"],
+        "subtasksOpen": ["styling form with CSS", "create imprint"],
+        "subtasksDone": [],
+        "category": "inProgress"
+    },
+    {
+        "id": "2",
+        "label": "User Story",
+        "title": "Kochwelt Page & Recipe Recommender",
+        "description": "Build start page with recipe recommendation.",
+        "dueDate": "02/06/2024",
+        "priority": "Medium",
+        "assignedTo": ["Anna Müller", "Max Baumgart", "Alex Maier", "Olivia Shaun", "Paul Lee", "Eva Grace"],
+        "subtasksOpen": ["create page with HTML and CSS"],
+        "subtasksDone": ["looking for a recipe"],
+        "category": "inProgress"
+    },
+    {
+        "id": "3",
+        "label": "Technical Task",
+        "title": "HTML Base Template Creation",
+        "description": "Create reusable HTML base templates.",
+        "dueDate": "28/05/2024",
+        "priority": "Low",
+        "assignedTo": ["Anna Müller"],
+        "subtasksOpen": [],
+        "subtasksDone": ["create a file structure", "create first html template"],
+        "category": "awaitFeedback"
+    },
+    {
+        "id": "4",
+        "label": "User Story",
+        "title": "Daily Kochwelt Recipe",
+        "description": "Implement daily recipe and portion calculator.",
+        "dueDate": "15/06/2024",
+        "priority": "Urgent",
+        "assignedTo": ["Alex Maier"],
+        "subtasksOpen": ["looking for a recipe", "create js functions"],
+        "subtasksDone": ["create calculator with HTML & CSS"],
+        "category": "awaitFeedback"
+    },
+    {
+        "id": "5",
+        "label": "Technical Task",
+        "title": "CSS Architecture Planning",
+        "description": "Define CSS naming conventions and structure.",
+        "dueDate": "05/07/2024",
+        "priority": "Medium",
+        "assignedTo": ["Max Baumgart"],
+        "subtasksOpen": [],
+        "subtasksDone": ["create CSS file structure"],
+        "category": "done"
+    }
+]

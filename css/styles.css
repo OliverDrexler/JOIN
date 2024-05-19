@@ -1,0 +1,263 @@
+body {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(246, 247, 249);
+  box-sizing: border-box;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-sign-up {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-form-container {
+  min-width: 50%;
+  border-radius: 20px;
+}
+
+.form-div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: rgb(42, 53, 70);
+  height: 100%;
+  box-sizing: border-box;
+  width: 232px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  padding: 64px 0px 64px 0px;
+  z-index: 50;
+}
+
+.sidebar-logo {
+  width: 100.03px;
+  height: 121.97px;
+}
+
+.sidebar-menu {
+  color: white;
+  height: 46px;
+  padding: 8px 56px 8px 56px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-family: "Inter";
+}
+
+.header-menu {
+  color: white;
+  height: 46px;
+  padding: 8px 56px 8px 56px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  font-family: "Inter";
+}
+
+.header-menu:hover {
+  background-color: #2a3e59;
+  cursor: pointer;
+}
+
+.sidebar-links {
+  height: 229px;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+
+.sidebar-menu:hover {
+  background-color: #2a3e59;
+  cursor: pointer;
+}
+
+.sidebar-bg-focus {
+  background-color: #091931;
+}
+
+.sidebar-icon {
+  width: 30px;
+  width: 30px;
+}
+
+.sidebar-legal {
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.sidebar-legal-element {
+  height: 35px;
+  padding: 8px 56px 8px 56px;
+  gap: 8px;
+  color: rgba(168, 168, 168, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  box-sizing: border-box;
+}
+
+.sidebar-legal-element:hover {
+  color: #29abe2;
+}
+
+.aot {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  height: 96px;
+  width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px 40px 20px 348px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1;
+}
+
+.logo-header {
+  display: none;
+}
+
+header {
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.header-text {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+}
+
+.header-symbols {
+  width: 104px;
+  height: 56px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.header-icon-one {
+  width: 32px;
+  height: 32px;
+}
+
+.header-icon-two {
+  gap: 16px;
+  display: flex;
+}
+
+.header-circle {
+  width: 56px;
+  height: 56px;
+  border: solid 3px rgba(42, 54, 71, 1);
+  border-radius: 50%;
+}
+
+.header-circle:hover{
+  background-color: #E2E6EC;
+}
+
+.header-inner-circle {
+  box-sizing: border-box;
+  width: 27.94px;
+  left: 10.03px;
+  color: rgba(41, 171, 226, 1);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main-container {
+  background-color: rgb(246, 247, 249);
+  min-height: calc(100vh - 84px);
+  margin-left: 232px;
+  width: calc(100% - 232px);
+  box-sizing: border-box;
+}
+
+.summary-container {
+  width: 100%;
+  height: calc(100% - 650px);
+  box-sizing: border-box;
+  margin:0;
+}
+
+.summary-header {
+  height:100px;
+}
+
+.summary {
+  display: flex;
+  width: 50%;
+  height:100%;
+  flex-wrap: wrap;
+  padding:0 20px;
+}
+
+.summary-welcome {
+  width: calc(100% - 63%);
+  visibility: hidden;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#summaryWelcome.animate {
+  visibility: visible;
+  animation: slideInFromRight 0.7s ease-out;
+}
+
+.add-task-form-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.box {
+width: 50%; 
+box-sizing: border-box;
+}
+
+.headline-board-columns {
+  height: 30px;
+}
+
+.headline-board-columns img {
+  height: 25px;
+  width: auto;
+}
+
+.legal-arrow {
+  position: fixed;
+  padding-top: 30px;
+  right: 60px;
+}
+
+/* add-task popup edit settings on board */
+.box-edit {
+  width: 100%; 
+  box-sizing: border-box;
+  }
