@@ -4,9 +4,6 @@ const STORAGE_URL = 'https://join-backend-d1b61-default-rtdb.europe-west1.fireba
 
 /**
  * This function sends user data from the login form (from the "users" array) to the remote server.
- * @param {*} key - 
- * @param {*} value - 
- * @returns 
  */
 
 async function setItem(key, value) {
@@ -23,8 +20,6 @@ async function setItem(key, value) {
 
 /**
  * This function loads user data from the remote server via the URL
- * @param {*} key - 
- * 
  */
 async function getItem(key) {
     const url = `${STORAGE_URL}/${key}.json`;
