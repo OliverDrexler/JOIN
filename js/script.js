@@ -206,16 +206,16 @@ async function resetExpiryTime() {
  * @param {string} currentPage - this is the current page title
  */
 async function loadIndividualFunctions(currentPage) {
-    if (currentPage === 'summary') {
+    if (currentPage === 'https://oliverdrexler.com/join/summary.html') {
         await renderSummary();
-    } else if (currentPage === 'add-task') {
+    } else if (currentPage === 'https://oliverdrexler.com/join/add-task.html') {
         await updateTaskContacts();
         renderAddTaskFormButton();
-    } else if (currentPage === 'board') {
+    } else if (currentPage === 'https://oliverdrexler.com/join/board.html') {
         await updateTaskContacts();
         await renderBoardTasks();
         renderAddTaskFormButton();
-    } else if (currentPage === 'contacts') {
+    } else if (currentPage === 'https://oliverdrexler.com/join/contacts.html') {
         await renderContacts();
     }
 }
