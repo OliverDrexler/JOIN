@@ -182,7 +182,7 @@ async function initiateIndividualFunctions() {
     let pages = ['summary', 'add-task', 'board', 'contacts', 'privacy-policy', 'legal-notice', 'help'];
     for (let index = 0; index < pages.length; index++) {
         const currentPage = pages[index];
-        if (document.location.pathname.includes(`https://oliverdrexler.com/${currentPage}.html`)) {
+        if (document.location.pathname.includes(`https://oliverdrexler.com/join/${currentPage}.html`)) {
             await resetExpiryTime();
             await loadIndividualFunctions(currentPage);
         }
