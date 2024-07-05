@@ -214,7 +214,7 @@ function getGreeting() {
  * 
  */
 function forwardingBoard() {
-  window.location.href = `./board.html`;
+  window.location.href = `https://oliverdrexler.com/join/board.html`;
 }
 
 

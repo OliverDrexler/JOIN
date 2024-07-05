@@ -50,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
 function backToLegalOrSummary() {
     let currentUrl = window.location.href;
     if (currentUrl.indexOf('legal-notice.html?external') !== -1) {
-        window.location.href = `./privacy-policy.html?external`;
+        window.location.href = `https://oliverdrexler.com/join/privacy-policy.html?external`;
     } else if (currentUrl.indexOf('privacy-policy.html?external') !== -1) {
-        window.location.href = `./login.html`;
+        window.location.href = `https://oliverdrexler.com/join/login.html`;
     } else if (currentUrl.indexOf('legal-notice.html') !== -1) {
-        window.location.href = `./privacy-policy.html`;
+        window.location.href = `https://oliverdrexler.com/join/privacy-policy.html`;
     } else if (currentUrl.indexOf('privacy-policy.html') !== -1) {
-        window.location.href = `./summary.html`;
+        window.location.href = `https://oliverdrexler.com/join/summary.html`;
     }
 }
 
@@ -172,11 +172,11 @@ function changeBgColorSidebarLink(position) {
 function openSidebarLegalLink(link) {
     let currentUrl = window.location.href;
     if (currentUrl.indexOf('external') !== -1) {
-        let url = `./${link}.html`;
+        let url = `https://oliverdrexler.com/join/${link}.html`;
         let targetUrl = url + '?external';
         window.location.href = targetUrl;
     } else {
-        let targetUrl = `./${link}.html`;
+        let targetUrl = `https://oliverdrexler.com/join/${link}.html`;
         window.location.href = targetUrl;
     }
 }

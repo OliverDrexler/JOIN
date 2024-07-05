@@ -313,12 +313,12 @@ async function checkAndLoadGuestData() {
  */
 async function reloadGuestData(contactsGuest, tasksGuest) {
     if (contactsGuest.length === 0) {
-        let respContacts = await fetch('./JSON/contacts.json');
+        let respContacts = await fetch('https://oliverdrexler.com/join/JSON/contacts.json');
         contacts = await respContacts.json();
         localStorage.setItem('contacts', JSON.stringify(contacts));
     }
     if (tasksGuest.length === 0) {
-        let respTasks = await fetch('./JSON/tasks.json');
+        let respTasks = await fetch('https://oliverdrexler.com/join/JSON/tasks.json');
         tasks = await respTasks.json();
         localStorage.setItem('tasks', JSON.stringify(tasks));
     }
@@ -332,7 +332,7 @@ async function reloadGuestData(contactsGuest, tasksGuest) {
  */
 async function reloadContactsWhenEmpty(userData) {
     if (userData.contacts.length === 0) {
-        let respContacts = await fetch('./JSON/contacts.json');
+        let respContacts = await fetch('https://oliverdrexler.com/join/JSON/contacts.json');
         contacts = await respContacts.json();  // load and save example contacts in array contacts
         await saveNewUserDate(); // save new arrays content in user on the remote server
     }
@@ -346,7 +346,7 @@ async function reloadContactsWhenEmpty(userData) {
  */
 async function reloadTasksWhenEmpty(userData) {
     if (userData.tasks.length === 0) {
-        let respTasks = await fetch('./JSON/tasks.json');
+        let respTasks = await fetch('https://oliverdrexler.com/join/JSON/tasks.json');
         tasks = await respTasks.json(); // load and save example tasks in array tasks
         await saveNewUserDate(); // save new arrays content in user on the remote server
     }
@@ -358,8 +358,8 @@ async function reloadTasksWhenEmpty(userData) {
  * 
  */
 async function loadExamples() {
-    let respContacts = await fetch('./JSON/contacts.json');
-    let respTasks = await fetch('./JSON/tasks.json');
+    let respContacts = await fetch('https://oliverdrexler.com/join/JSON/contacts.json');
+    let respTasks = await fetch('https://oliverdrexler.com/join/JSON/tasks.json');
     contacts = await respContacts.json();
     tasks = await respTasks.json();
 }
