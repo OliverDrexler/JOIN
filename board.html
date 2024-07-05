@@ -4,27 +4,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="icon" type="image/x-icon" href="./assets/img/logo.svg" />
+  <link rel="icon" type="image/x-icon" href="https://oliverdrexler.com/join/assets/img/logo.svg" />
   <title>Board</title>
-  <script src="./js/script.js"></script>
-  <script src="./js/storage.js"></script>
-  <script src="./js/sidebar.js"></script>
-  <script src="./js/contacts.js"></script>
-  <script src="./js/renderHTML.js"></script>
-  <script src="./js/board.js"></script>
-  <script src="./js/mobileBoard.js"></script>
-  <script src="./js/add-task.js"></script>
-  <link rel="stylesheet" href="./css/standard.css" />
-  <link rel="stylesheet" href="./css/fonts.css" />
-  <link rel="stylesheet" href="./css/assets.css" />
-  <link rel="stylesheet" href="./css/add-task.css" />
-  <link rel="stylesheet" href="./css/contacts.css" />
-  <link rel="stylesheet" href="./css/board.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/responsive-general.css" />
-  <link rel="stylesheet" href="./css/responsive-contacts-header-sidebar.css" />
-  <link rel="stylesheet" href="./css/responsive-board.css" />
-  <link rel="stylesheet" href="./css/responsive-board-add-task.css" />
+  <script src="https://oliverdrexler.com/join/js/script.js"></script>
+  <script src="https://oliverdrexler.com/join/js/storage.js"></script>
+  <script src="https://oliverdrexler.com/join/js/sidebar.js"></script>
+  <script src="https://oliverdrexler.com/join/js/contacts.js"></script>
+  <script src="https://oliverdrexler.com/join/js/renderHTML.js"></script>
+  <script src="https://oliverdrexler.com/join/js/board.js"></script>
+  <script src="https://oliverdrexler.com/join/js/mobileBoard.js"></script>
+  <script src="https://oliverdrexler.com/join/js/add-task.js"></script>
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/standard.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/fonts.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/assets.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/add-task.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/contacts.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/board.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/styles.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/responsive-general.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/responsive-contacts-header-sidebar.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/responsive-board.css" />
+  <link rel="stylesheet" href="https://oliverdrexler.com/join/css/responsive-board-add-task.css" />
 </head>
 
 <body onload="init()">
@@ -43,7 +43,7 @@
           <input class="search-board-input" type="text" id="searchBoardInput" placeholder="Find Task" required
             onkeypress="searchTasksByKeyPress(event)" />
           <div class="search-icon">
-            <img src="../assets/img/search-icon-with-line.svg" alt="" onclick="searchTasksOnBoard()" />
+            <img src="https://oliverdrexler.com/join/assets/img/search-icon-with-line.svg" alt="" onclick="searchTasksOnBoard()" />
           </div>
         </div>
         <a class="btn gap-10 add-task-btn-board-header popup-btn" data-popup-type="addTask"
@@ -75,7 +75,7 @@
       <div class="drag-area-category d_c_c_fs gap-10 mobile-drag-area-category">
         <div class="headline-board-columns d_f_sb_c width-max mobile-headline-board-columns">
           <p class="drag-area-category-headline">To do</p>
-          <img class="cursor-pointer" src="./assets/img/plus-button.svg" id="imgBacklog" onclick="openBoardAddTaskPopup(this)" />
+          <img class="cursor-pointer" src="https://oliverdrexler.com/join/assets/img/plus-button.svg" id="imgBacklog" onclick="openBoardAddTaskPopup(this)" />
         </div>
         <div class="drag-area-alt d_c_fs_c mobile-drag-area-alt" id="backlog" ondrop="moveTo('backlog')"
           ondragleave="removeHighlight('backlog')" ondragover="allowDrop(event); highlight('backlog')"></div>
@@ -84,7 +84,7 @@
       <div class="drag-area-category d_c_c_fs gap-10 mobile-drag-area-category">
         <div class="headline-board-columns d_f_sb_c width-max mobile-headline-board-columns">
           <p class="drag-area-category-headline">In progress</p>
-          <img class="cursor-pointer" src="./assets/img/plus-button.svg" id="imgInProgress" onclick="openBoardAddTaskPopup(this)" />
+          <img class="cursor-pointer" src="https://oliverdrexler.com/join/assets/img/plus-button.svg" id="imgInProgress" onclick="openBoardAddTaskPopup(this)" />
         </div>
         <div class="drag-area-alt d_c_fs_c mobile-drag-area-alt" id="inProgress" ondrop="moveTo('inProgress')"
           ondragleave="removeHighlight('inProgress')" ondragover="allowDrop(event); highlight('inProgress')"></div>
@@ -93,7 +93,7 @@
       <div class="drag-area-category d_c_c_fs gap-10 mobile-drag-area-category">
         <div class="headline-board-columns d_f_sb_c width-max mobile-headline-board-columns">
           <p class="drag-area-category-headline">Await feedback</p>
-          <img class="cursor-pointer" src="./assets/img/plus-button.svg" id="imgAwaitFeedback" onclick="openBoardAddTaskPopup(this)" />
+          <img class="cursor-pointer" src="https://oliverdrexler.com/join/assets/img/plus-button.svg" id="imgAwaitFeedback" onclick="openBoardAddTaskPopup(this)" />
         </div>
         <div class="drag-area-alt d_c_fs_c mobile-drag-area-alt" id="awaitFeedback" ondrop="moveTo('awaitFeedback')"
           ondragleave="removeHighlight('awaitFeedback')" ondragover="allowDrop(event); highlight('awaitFeedback')">
@@ -119,7 +119,7 @@
       <div class="d_c_sb_fs gap-30 width-max word-break" id="boardTaskEditContainer">
         <div class="d_f_fe_c width-max">
           <div class="d_c_c_c close-popup-button-board popup-close-button" onclick="closeBoardTaskPopup()">
-            <img class="close-popup-button-board-img" src="./assets/img/close.svg" alt="" />
+            <img class="close-popup-button-board-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="" />
           </div>
         </div>
         <div class="d_c_fs_fs width-max popup" id="editTaskPopup" include-html="../assets/templates/add-task-form.html">
@@ -133,7 +133,7 @@
           <div class="btn-board d_f_c_c width-50" id="taskPopupContentLabel"></div>
           <div class="d_f_fe_c width-max" id="taskCloseButtonRight">
             <div class="d_c_c_c close-popup-button-img-board popup-close-button" onclick="closeBoardTaskPopup()">
-              <img class="close-popup-button-board-img" src="./assets/img/close.svg" alt="" />
+              <img class="close-popup-button-board-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="" />
             </div>
           </div>
         </div>
@@ -191,7 +191,7 @@
         <h2>Add Task</h2>
         <div class="popup-close-button">
           <div class="add-contact-container-right-img-wrapper d_c_c_c" onclick="closeBoardAddTaskPopup()">
-            <img class="add-contact-container-right-img" src="./assets/img/close.svg" alt="" />
+            <img class="add-contact-container-right-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="" />
           </div>
         </div>
       </div>
@@ -215,7 +215,7 @@
   </div>
 
   <div class="d_f_fs_c gap-8 add-board-message-btn" id="addTaskMessageContainer" style="display: none">
-    <a class="btn-message d_c_c_c">Task added to board</a><img src="assets/img/board-icon_grey.svg" alt="icon"
+    <a class="btn-message d_c_c_c">Task added to board</a><img src="https://oliverdrexler.com/join/assets/img/board-icon_grey.svg" alt="icon"
       style="padding-right: 24px" />
   </div>
 
