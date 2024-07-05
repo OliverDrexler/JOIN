@@ -117,7 +117,7 @@ function checkFalseOpening() {
  * 
  */
 function firstLogin() {
-    return window.location.href = `./login.html`;
+    return window.location.href = `https://oliverdrexler.com/join/login.html`;
 }
 
 
@@ -610,7 +610,7 @@ function clickLogout() {
     localStorage.removeItem('tasks');
     localStorage.removeItem('contacts');
     setTimeout(() => {
-        window.location.href = `./login.html?msg=you are logged out`;
+        window.location.href = `https://oliverdrexler.com/join/login.html?msg=you are logged out`;
     }, 500);
 }
 

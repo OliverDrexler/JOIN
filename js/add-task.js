@@ -15,7 +15,7 @@ let setCategory = "backlog";
  */
 async function updateTaskContacts() {
   if (authorized === "guest") {
-    let resp = await fetch("./JSON/contacts.json");
+    let resp = await fetch("https://oliverdrexler.com/join/JSON/contacts.json");
     contactsForTasks = await resp.json();
   } else {
     let currentUserContactsForTasks = users[currentUser].contacts;
@@ -29,7 +29,7 @@ async function updateTaskContacts() {
  * 
  */
 async function addTask() {
-  if (document.location.pathname === `/board.html` && templateIndex === 3) {
+  if (document.location.pathname === `https://oliverdrexler.com/join/board.html` && templateIndex === 3) {
     await initiateFunctionsForAddTaskOnBoard(); 
   } else {
     await initiateFunctionsForAddTaskForm(); 
@@ -175,7 +175,7 @@ async function initiateFunctionsForAddTaskForm() {
   newTask.push(task);
   await saveNewTask();
   resetAddTaskValues();
-  if (document.location.pathname === `/board.html` && templateIndex === 3) {
+  if (document.location.pathname === `https://oliverdrexler.com/join/board.html` && templateIndex === 3) {
     closeBoardAddTaskPopup();
   }
   addTaskToBoardMessage();
@@ -332,7 +332,7 @@ function resetAddTaskValues() {
  * 
  */
 async function addSubtask() {
-  if (document.location.pathname === `/board.html` && templateIndex === 3) {
+  if (document.location.pathname === `https://oliverdrexler.com/join/board.html` && templateIndex === 3) {
     await initiateFunctionsForAddSubtasksOnBoard(); 
   } else {
     await initiateFunctionsForAddSubtasksForm(); 
@@ -420,7 +420,7 @@ async function initiateFunctionsForAddSubtasksForm() {
  * @param {string} element - element-div from selected subtask
  */
 function editSubtask(element) {
-  if (document.location.pathname === `/board.html` && templateIndex === 3) {
+  if (document.location.pathname === `https://oliverdrexler.com/join/board.html` && templateIndex === 3) {
     initiateFunctionsForEditSubtasksInTask(element); 
   } else {
     initiateFunctionsForEditSubtasksInForm(element); 
@@ -555,7 +555,7 @@ function deleteSubtaskForOtherPages(index) {
  * @param {number} i - The index of the subtask to delete.
  */
 function deleteSubtask(i) {
-  if (document.location.pathname === `/board.html` && templateIndex === 3) {
+  if (document.location.pathname === `https://oliverdrexler.com/join/board.html` && templateIndex === 3) {
     const currentTask = getCurrentTaskForDeletion();
     deleteSubtaskForBoard(i, currentTask);
   } else {

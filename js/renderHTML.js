@@ -115,7 +115,7 @@ function renderAddContactContainerHTML() {
     return `
     <div class="add-contact-container" id="addContactContainer" onclick='doNotClose(event)'>
             <div class="add-contact-container-left">
-                <img class="add-contact-img" src="./assets/img/logo2.png" alt="">
+                <img class="add-contact-img" src="https://oliverdrexler.com/join/assets/img/logo2.png" alt="">
                 <span class="add-contact-span-big">Add Contact</span>
                 <span class="add-contact-span-small">Tasks are better with a team!</span>
                 <div class="horizontal-partingline"></div>
@@ -123,12 +123,12 @@ function renderAddContactContainerHTML() {
             <div class="add-contact-container-right">
                 <div class="d_f_fe_c close-contact-btn">
                     <div class="add-contact-container-right-img-wrapper d_c_c_c" onclick="closeAddContactForm()">
-                        <img class="add-contact-container-right-img mobile-add-contact-container-right-img" src="./assets/img/close.svg" alt="">
+                        <img class="add-contact-container-right-img mobile-add-contact-container-right-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="">
                     </div>
                 </div>
                 <div class="add-contact-container-right-bottom-wrapper">
                     <div class="add-contact-container-right-bottom">
-                        <img class="contact-grey-svg" src="./assets/img/contact-picture.svg" alt="">
+                        <img class="contact-grey-svg" src="https://oliverdrexler.com/join/assets/img/contact-picture.svg" alt="">
                         <form class="contact-form" id="contactForm" onsubmit="validateAndAddContact(event); return false;">
                             <input id="inputAddContactName" class="contact-input-style input-name input-font" type="text" placeholder="Name" pattern="([A-ZÄÖÜ][a-zäöüß]{2,})([\\-\\s][A-ZÄÖÜ][a-zäöüß]{2,})*"
                             title="Vorname und Nachname müssen anfangs groß geschrieben werden und je aus mind. 3 Buchstaben bestehen. Bindestriche und Leerzeichen sind erlaubt, um mehrere Namen zu trennen." required>
@@ -143,7 +143,7 @@ function renderAddContactContainerHTML() {
                                     </svg>
                                 </button>
                                 <button type="submit" class="btn gap-10" >Create Contact<img
-                                        src="assets/img/check.svg" />
+                                        src="https://oliverdrexler.com/join/assets/img/check.svg" />
                                 </button>
                             </div>
                         </form>
@@ -180,14 +180,14 @@ function renderEditContactHTML(
     return `
     <div class="add-contact-container" id="editContactContainer" onclick='doNotClose(event)'>
             <div class="edit-contact-container-left">
-                <img class="edit-contact-img" src="./assets/img/logo2.png" alt="">
+                <img class="edit-contact-img" src="https://oliverdrexler.com/join/assets/img/logo2.png" alt="">
                 <span class="add-contact-span-big">Edit Contact</span>
                 <div class="horizontal-partingline"></div>
             </div>
             <div class="add-contact-container-right">
                 <div class="d_f_fe_c close-contact-btn">
                     <div class="add-contact-container-right-img-wrapper d_c_c_c" onclick="closeEditContactForm()">
-                        <img class="add-contact-container-right-img mobile-add-contact-container-right-img" src="./assets/img/close.svg" alt="">
+                        <img class="add-contact-container-right-img mobile-add-contact-container-right-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="">
                     </div>
                 </div>
                 <div class="add-contact-container-right-bottom-wrapper">
@@ -364,7 +364,7 @@ function renderShowTaskContent(todo, openLabel, openTitle, openDescription, open
       </div>
       <div class="d_f_fs_c gap-10">
           <p>${todo["priority"]}</p>
-          <div><img src="../assets/img/${getPriorityIcon(todo)}"></img></div>
+          <div><img src="https://oliverdrexler.com/join/assets/img/${getPriorityIcon(todo)}"></img></div>
       </div>
       `;
 }
@@ -446,9 +446,9 @@ function renderOpenSubtasksInEditForm(subtask, index) {
     <div id='subtask${index}' class='d_f_sb_c pad-x-10 subtask'>
     <span>• ${subtask}</span>
     <div class='d_f_c_c gap-5'>
-      <img src="assets/img/pen_dark.svg" alt="pen" class="subtask-icon" id="subtasksOpen${index}" onclick="editSubtask(this)" />
+      <img src="https://oliverdrexler.com/join/assets/img/pen_dark.svg" alt="pen" class="subtask-icon" id="subtasksOpen${index}" onclick="editSubtask(this)" />
       <div class="subtask-partingline"></div>
-      <img src="assets/img/trash_dark.svg" alt="trash" class="subtask-icon" id="subtasksOpen${index}" onclick="deleteSubtask(this)" />
+      <img src="https://oliverdrexler.com/join/assets/img/trash_dark.svg" alt="trash" class="subtask-icon" id="subtasksOpen${index}" onclick="deleteSubtask(this)" />
     </div>
   </div>
     `;
@@ -466,9 +466,9 @@ function renderDoneSubtasksInEditForm(subtask, index) {
     <div id='subtask${index}' class='d_f_sb_c pad-x-10 subtask'>
     <span>• ${subtask}</span>
     <div class='d_f_c_c gap-5'>
-      <img src="assets/img/pen_dark.svg" alt="pen" class="subtask-icon" id="subtasksDone${index}" onclick="editSubtask(this)" />
+      <img src="https://oliverdrexler.com/join/assets/img/pen_dark.svg" alt="pen" class="subtask-icon" id="subtasksDone${index}" onclick="editSubtask(this)" />
       <div class="subtask-partingline"></div>
-      <img src="assets/img/trash_dark.svg" alt="trash" class="subtask-icon" id="subtasksDone${index}" onclick="deleteSubtask(this)"/>
+      <img src="https://oliverdrexler.com/join/assets/img/trash_dark.svg" alt="trash" class="subtask-icon" id="subtasksDone${index}" onclick="deleteSubtask(this)"/>
     </div>
   </div>
     `;
@@ -556,7 +556,7 @@ function renderMobileTodoSettings(taskId) {
   </div>
 
   <div class="d_c_c_c close-popup-todo-settings popup-close-button" onclick="resetMobileTodoSettings()">
-  <img class="close-popup-button-todo-settings-img" src="./assets/img/close.svg" alt="" />
+  <img class="close-popup-button-todo-settings-img" src="https://oliverdrexler.com/join/assets/img/close.svg" alt="" />
 </div>
 
 </div>
@@ -633,9 +633,9 @@ function changeIcons() {
     iconBox.classList.add("input-icon");
     iconBox.innerHTML = `
       <div class="d_f_c_c gap-5 padding-right-36">
-      <div onclick='clearSubtaskInput()' class="icon-edit-delete"> <img src="assets/img/close.svg" alt="cross" /></div>
+      <div onclick='clearSubtaskInput()' class="icon-edit-delete"> <img src="https://oliverdrexler.com/join/assets/img/close.svg" alt="cross" /></div>
         <div class='input-spacer'></div>
-        <div onclick='addSubtask(),clearSubtaskInput()' class="icon-edit-delete"> <img src="assets/img/check-black.svg" alt="check" /></div>
+        <div onclick='addSubtask(),clearSubtaskInput()' class="icon-edit-delete"> <img src="https://oliverdrexler.com/join/assets/img/check-black.svg" alt="check" /></div>
       </div>
     `;
 }
@@ -653,9 +653,9 @@ function renderSubtasks(container) {
         <div id="subtask${index}" class="d_f_sb_c pad-x-10 subtask width-max">
           <span>• ${subtask}</span>
           <div class='d_f_c_c gap-5'>
-            <img src="assets/img/pen_dark.svg" alt="pen" class="subtask-icon" onclick="editSubtask(this)" />
+            <img src="https://oliverdrexler.com/join/assets/img/pen_dark.svg" alt="pen" class="subtask-icon" onclick="editSubtask(this)" />
             <div class="subtask-partingline"></div>
-            <img src="assets/img/trash_dark.svg" alt="trash" class="subtask-icon" onclick="deleteSubtask(${index})" />
+            <img src="https://oliverdrexler.com/join/assets/img/trash_dark.svg" alt="trash" class="subtask-icon" onclick="deleteSubtask(${index})" />
           </div>
         </div>
       `;
