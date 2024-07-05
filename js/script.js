@@ -182,7 +182,7 @@ async function initiateIndividualFunctions() {
     let pages = ['summary', 'add-task', 'board', 'contacts', 'privacy-policy', 'legal-notice', 'help'];
     for (let index = 0; index < pages.length; index++) {
         const currentPage = pages[index];
-        if (document.location.pathname.includes(`https://oliverdrexler.com/join/${currentPage}.html`)) {
+        if (document.location.pathname.includes(`/${currentPage}.html`)) {
             await resetExpiryTime();
             await loadIndividualFunctions(currentPage);
         }
@@ -206,16 +206,16 @@ async function resetExpiryTime() {
  * @param {string} currentPage - this is the current page title
  */
 async function loadIndividualFunctions(currentPage) {
-    if (currentPage === 'https://oliverdrexler.com/join/summary.html') {
+    if (currentPage === 'summary') {
         await renderSummary();
-    } else if (currentPage === 'https://oliverdrexler.com/join/add-task.html') {
+    } else if (currentPage === 'add-task') {
         await updateTaskContacts();
         renderAddTaskFormButton();
-    } else if (currentPage === 'https://oliverdrexler.com/join/board.html') {
+    } else if (currentPage === 'board') {
         await updateTaskContacts();
         await renderBoardTasks();
         renderAddTaskFormButton();
-    } else if (currentPage === 'https://oliverdrexler.com/join/contacts.html') {
+    } else if (currentPage === 'contacts') {
         await renderContacts();
     }
 }
@@ -311,16 +311,22 @@ async function checkAndLoadGuestData() {
  * @param {string} contactsGuest - the data from current user
  * @param {string} contactsGuest - the data from current user
  */
-async function reloadGuestData(contactsGuest, tasksGuest) {
-    if (contactsGuest.length === 0) {
+async function loadExamples() {
+    try {
         let respContacts = await fetch('https://oliverdrexler.com/join/JSON/contacts.json');
-        contacts = await respContacts.json();
-        localStorage.setItem('contacts', JSON.stringify(contacts));
-    }
-    if (tasksGuest.length === 0) {
+        if (!respContacts.ok) {
+            throw new Error('Network response was not ok');
+        }
         let respTasks = await fetch('https://oliverdrexler.com/join/JSON/tasks.json');
+        if (!respTasks.ok) {
+            throw new Error('Network response was not ok');
+        }
+        contacts = await respContacts.json();
         tasks = await respTasks.json();
-        localStorage.setItem('tasks', JSON.stringify(tasks));
+        console.log('Contacts loaded:', contacts); // Konsolenausgabe
+        console.log('Tasks loaded:', tasks); // Konsolenausgabe
+    } catch (error) {
+        console.error('Error loading examples:', error);
     }
 }
 
